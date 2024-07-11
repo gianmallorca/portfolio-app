@@ -6,11 +6,11 @@ import { Link as ScrollLink } from "react-scroll";
 const Navbar: React.FC = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg"
+      className="navbar navbar-expand-lg navbar-dark"
       style={{ backgroundColor: "#131516", fontFamily: "Montserrat" }}
     >
       <div className="container-fluid">
-        <Link className="navbar-brand text-white" to="/">
+        <Link className="navbar-brand" to="/">
           <span className="Title">Portfolio</span>
         </Link>
         <button
@@ -25,16 +25,17 @@ const Navbar: React.FC = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav ms-auto" style={{ marginLeft: "auto" }}>
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link
+              <ScrollLink
                 className="nav-link"
-                aria-current="page"
-                to="/"
-                onClick={() => window.scrollTo(0, 0)}
+                to="contentSection"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
                 Home
-              </Link>
+              </ScrollLink>
             </li>
             <li className="nav-item">
               <ScrollLink
