@@ -5,6 +5,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Projects: React.FC = () => {
+  // Function to open a new window with the image
+  const openImage = (imageUrl: string) => {
+    window.open(imageUrl, "_blank");
+  };
+
   return (
     <div
       id="projectsSection"
@@ -33,8 +38,14 @@ const Projects: React.FC = () => {
               <img
                 src={"Car.jpg"}
                 alt="Car Project"
-                style={{ width: "500px", height: "500px", objectFit: "cover" }}
+                style={{
+                  width: "500px",
+                  height: "500px",
+                  objectFit: "cover",
+                  cursor: "pointer", // Add cursor pointer to indicate clickable
+                }}
                 className="img-fluid"
+                onClick={() => openImage("Car.jpg")}
               />
               <figcaption className="text-center mt-3">Car Rental</figcaption>
             </figure>
@@ -44,8 +55,14 @@ const Projects: React.FC = () => {
               <img
                 src={"winform.jpg"}
                 alt="WinForm Project"
-                style={{ width: "500px", height: "500px", objectFit: "cover" }}
+                style={{
+                  width: "500px",
+                  height: "500px",
+                  objectFit: "cover",
+                  cursor: "pointer", // Add cursor pointer to indicate clickable
+                }}
                 className="img-fluid"
+                onClick={() => openImage("winform.jpg")}
               />
               <figcaption className="text-center mt-3">
                 Student Enrollment System (Desktop)
@@ -57,8 +74,14 @@ const Projects: React.FC = () => {
               <img
                 src={"Enrollment.jpg"}
                 alt="Enrollment Project"
-                style={{ width: "500px", height: "500px", objectFit: "cover" }}
+                style={{
+                  width: "500px",
+                  height: "500px",
+                  objectFit: "cover",
+                  cursor: "pointer", // Add cursor pointer to indicate clickable
+                }}
                 className="img-fluid"
+                onClick={() => openImage("Enrollment.jpg")}
               />
               <figcaption className="text-center mt-3">
                 Student Enrollment System (Web-App)
