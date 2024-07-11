@@ -6,7 +6,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Info: React.FC = () => {
   return (
-    <div className="container marketing">
+    <div id="infoSection" className="container marketing">
       {/* Three columns of text below the carousel */}
       <div className="row"></div>
 

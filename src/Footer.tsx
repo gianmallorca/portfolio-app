@@ -5,7 +5,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Footer: React.FC = () => {
   return (
-    <div className="container py-3">
+    <div id="footerSection" className="container py-3">
       <footer className="pt-4 my-md-5 pt-md-5 border-top">
         <div className="row">
           <div className="col-12 col-md">
@@ -13,90 +13,37 @@ const Footer: React.FC = () => {
               © 2024–2025
             </small>
           </div>
-          <div className="col-6 col-md">
-            <h5>Features</h5>
-            <ul className="list-unstyled text-small">
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Cool stuff
+          <div className="col-12 col-md">
+            <div className="text-center mb-3">
+              <p>Contact Me Here</p>
+              <div
+                className="icons"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  gap: "15px",
+                }}
+              >
+                <a
+                  className="hi"
+                  href="https://www.facebook.com/mallorcathegreat"
+                >
+                  <i className="bi bi-facebook" style={{ color: "black" }}></i>
                 </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Random feature
+                <a
+                  className="hi"
+                  href="https://www.instagram.com/mallorcathegreat/"
+                >
+                  <i className="bi bi-instagram" style={{ color: "black" }}></i>
                 </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Team feature
+                <a
+                  className="hi"
+                  href="https://www.youtube.com/@gianmallorca5620"
+                >
+                  <i className="bi bi-youtube" style={{ color: "black" }}></i>
                 </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Stuff for developers
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Another one
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Last time
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-6 col-md">
-            <h5>Resources</h5>
-            <ul className="list-unstyled text-small">
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Resource
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Resource name
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Another resource
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Final resource
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-6 col-md">
-            <h5>About</h5>
-            <ul className="list-unstyled text-small">
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Team
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Locations
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Privacy
-                </a>
-              </li>
-              <li className="mb-1">
-                <a className="link-secondary text-decoration-none" href="#">
-                  Terms
-                </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </footer>

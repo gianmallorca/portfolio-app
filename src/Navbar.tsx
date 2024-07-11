@@ -7,12 +7,12 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className="navbar navbar-expand-lg"
-      style={{ backgroundColor: "#131516" }}
+      style={{ backgroundColor: "#131516", fontFamily: "Montserrat" }}
     >
       <div className="container-fluid">
-        <a className="navbar-brand text-white" href="#">
+        <Link className="navbar-brand text-white" to="/">
           <span className="Title">Portfolio</span>
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -25,17 +25,21 @@ const Navbar: React.FC = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav" style={{ marginLeft: "475px" }}>
-            {/* ms-auto class moves the links to the right */}
+          <ul className="navbar-nav ms-auto" style={{ marginLeft: "auto" }}>
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/">
+              <Link
+                className="nav-link"
+                aria-current="page"
+                to="/"
+                onClick={() => window.scrollTo(0, 0)}
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
               <ScrollLink
                 className="nav-link"
-                to="aboutSection"
+                to="infoSection"
                 spy={true}
                 smooth={true}
                 duration={500}
@@ -43,26 +47,28 @@ const Navbar: React.FC = () => {
                 About
               </ScrollLink>
             </li>
+
             <li className="nav-item">
               <ScrollLink
                 className="nav-link"
-                to="contactSection"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                Contact
-              </ScrollLink>
-            </li>
-            <li className="nav-item">
-              <ScrollLink
-                className="nav-link"
-                to="Projects"
+                to="projectsSection"
                 spy={true}
                 smooth={true}
                 duration={500}
               >
                 Projects
+              </ScrollLink>
+            </li>
+
+            <li className="nav-item">
+              <ScrollLink
+                className="nav-link"
+                to="footerSection"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Contact
               </ScrollLink>
             </li>
           </ul>

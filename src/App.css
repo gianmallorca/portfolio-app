@@ -73,7 +73,7 @@
 }
 
 .hi {
-  color: white;
+  color: rgb(0, 0, 0);
   transition: color 0.3s;
 }
 
@@ -139,4 +139,8 @@
 
 .Project {
   color: #de9e36;
+}
+
+.nav-link {
+  cursor: pointer;
 }
