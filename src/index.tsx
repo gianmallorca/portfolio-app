@@ -14,17 +14,20 @@ import Info from "./Info";
 import Content from "./Content";
 import Projects from "./Projects";
 import Footer from "./Footer";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Navbar />
-    <Content />
-    <Info />
-    <Projects />
-    <Footer />
+    <BrowserRouter>
+      <Navbar />
+      <Content />
+      <Info />
+      <Projects />
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
