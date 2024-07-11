@@ -1,0 +1,19 @@
+.navbar {
+  background-color: rgba(13, 40, 24, 0.8); /* Background color with opacity */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: rgb(186, 32, 32); /* Text color */
+}
+
+/* Optional: Apply a blur effect behind the navbar */
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
